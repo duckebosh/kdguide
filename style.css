@@ -1,0 +1,161 @@
+@font-face {
+    font-family: Bluu;
+    src: url(cdn/fonts/BluuNext-master/fonts/BluuNext-Bold.otf);
+  }
+
+  @font-face {
+    font-family: Karrik;
+    src: url(cdn/fonts/karrik_fonts-main/fonts/Web/TFF/Karrik-Regular.ttf);
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(122,153,217)),
+									   color-stop(0.72, rgb(73,125,189)),
+									   color-stop(0.86, rgb(28,58,148)));
+}
+
+body {
+    background-color: #64B6AC;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content {
+    background-color: #C0FDFB;
+    max-width: 75%;
+    min-height: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.interior {
+    margin-left: 40px;
+}
+
+.hamburger {
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* General Styles for all */
+
+.lower-area {
+    margin-top: 250px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.button-styles {
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-family: Karrik;
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.button-styles:hover {
+    color: #FFFFFF;
+    background-color: rgb(8, 8, 8);
+}
+
+.article-image-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* code */
+
+pre {
+    background-color: rgb(30, 30, 30);
+    max-width: 75%;
+    border-radius: 10px;
+}
+
+.single-line-code {
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    padding: 2px;
+}
+
+code {
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+  }
+
+/* Headings */
+
+.large-heading {
+    font-family: Bluu;
+    font-size: 7vw;
+}
+
+.medium-heading {
+    font-family: Bluu;
+    font-size: 5vw;
+}
+
+.sub-heading {
+    font-family: Karrik;
+    font-size: 3vw;
+}
+
+/* Paragraphs */
+
+.paragraph {
+    font-size: 1.4vw;
+    max-width: 90%;
+    display: block;
+    font-family: Karrik;
+    font-weight: 200;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width:1000px)  {
+    .content {
+        min-width: 100%;
+    }
+
+    .hamburger {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    .paragraph {
+        font-size: 4vw;
+    }
+  }
